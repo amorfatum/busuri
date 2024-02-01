@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Page Title</title>
+    </head>
+    <body>
+        <div class="sticky-header">
+            <header>
+                <div class="header-container">
+                    <div class="top-navigation">
+                        <a href="index.html" class="logo">💧</a>
+                        <nav>
+                            <a href="https://www.gofundme.com/f/sauberes-trinkwasser-fur-warsayso-dorf?member=28928513&sharetype=teams">💙 Spenden</a>
+                            <a href="https://www.neo1.ch/artikel/busuri-adan-aus-worb-ging-fuer-ein-besseres-leben-durch-die-hoelle">🎤 Interview</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="main-container">
+            <main id="content">
+                <article class="main-content">
+                    <header>
+                        <h1>This is a Heading</h1>
+                    </header>
+                    <section>
+                        <h2>Informationen zum gegenwärtigen Stand in Äthiopien</h2>
+                        <img src="media/images/acute_food_insecurity.PNG" class="etiopiamap" alt="Etiopia map of food insecurity classification"></img>
+                        <p>screenshot from <a href="https://fews.net/east-africa/ethiopia">https://fews.net</a></p>
+                        <ul>
+                            <li><a href="https://www.reuters.com/world/africa/ethiopian-official-least-372-deaths-due-hunger-two-regions-last-6-months-2024-01-31/">372 Menschen verdurstet</a></li>
+                            <li><a href="https://www.reuters.com/world/africa/southern-ethiopia-drought-kills-livestock-amid-fears-what-comes-next-2023-04-06/">Dürre in Äthiopien tötet Vieh</a></li>
+                        </ul>
+                    </section>
+                </article>
+                <p>This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p><br>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph .</p>
+                <p>This is a paragraph.This is a paragraph.This is a paragraph. This is a paragraph.</p><br>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragrapThis is a paragraph This is a paragraph h.</p>
+                <p>This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p><br>
+                <p>This is a paragraphThis is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph .</p><br>
+                <p>This is a paragraph.This is a paragraph.</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragrapThis is a paragraph This is a paragraph h.</p>
+                <p>This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p><br>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragraphThis is a paragraph This is a paragraph .</p>
+                <p>This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.This is a paragraph.</p><br>
+                <p>This is a paragraphThis is a paragraph This is a paragraph This is a paragraph This is a paragraph .</p>
+                <p>This is a paragrapThis is a paragraph This is a paragraph h.</p><br>
+            </main>
+        </div>
+        <footer>
+
+        </footer>
+        <script>
+            window.addEventListener("scroll", function(e){
+                let scrollDepth = this.scrollY;
+                if(scrollDepth > 0){
+                    document.getElementsByClassName("logo")[0].style.fontSize = "20px";
+                    document.getElementsByClassName("header-container")[0].style.height = "50px";
+                    document.getElementsByClassName("top-navigation")[0].style.alignItems = "unset";
+                }else{
+                    document.getElementsByClassName("logo")[0].style.fontSize = "50px";
+                    document.getElementsByClassName("header-container")[0].style.height = "unset";
+                    document.getElementsByClassName("top-navigation")[0].style.alignItems = "center";
+                }
+            });
+        </script>
+    </body>
+</html>
+
+<style>
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    
+}
+
+a{
+    text-decoration: none;
+    color: #f57207;
+}
+
+nav > a{
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+a:hover{
+    color: #ff2600;
+}
+
+.sticky-header{
+    position: sticky;
+    top: 0;
+    height: 96px;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    background-color: #FFC845;
+    flex-flow: row wrap;
+}
+
+.top-navigation{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 50%;
+    padding: 15px;
+}
+
+.logo{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.main-container{
+    background-color: #f8eed5;
+}
+
+.etiopiamap{
+  background-image: url("media/images/acute_food_insecurity.PNG");
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+</style>
