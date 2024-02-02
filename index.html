@@ -75,16 +75,19 @@
 
         </footer>
         <script>
+            // Navigation scroll effect
             window.addEventListener("scroll", function(e){
                 let scrollDepth = this.scrollY;
-                if(scrollDepth > 0){
-                    document.getElementsByClassName("logo")[0].style.fontSize = "20px";
-                    document.getElementsByClassName("header-container")[0].style.height = "50px";
-                    document.getElementsByClassName("top-navigation")[0].style.alignItems = "unset";
+                if(scrollDepth > 50){
+                    if(!document.getElementsByClassName("logo")[0].classList.contains("logo-decreased-size")){
+                        document.getElementsByClassName("logo")[0].classList.toggle("logo-decreased-size");
+                        document.getElementsByClassName("header-container")[0].classList.toggle("header-container-decreased-size");
+                    }
                 }else{
-                    document.getElementsByClassName("logo")[0].style.fontSize = "50px";
-                    document.getElementsByClassName("header-container")[0].style.height = "unset";
-                    document.getElementsByClassName("top-navigation")[0].style.alignItems = "center";
+                    if(document.getElementsByClassName("logo")[0].classList.contains("logo-decreased-size")){
+                        document.getElementsByClassName("logo")[0].classList.toggle("logo-decreased-size");
+                        document.getElementsByClassName("header-container")[0].classList.toggle("header-container-decreased-size");
+                    }
                 }
             });
         </script>
@@ -101,10 +104,6 @@ h1{
 body{
     margin: 0;
     font-family: sans-serif;
-}
-
-nav{
-    
 }
 
 a{
@@ -124,7 +123,10 @@ a:hover{
 .sticky-header{
     position: sticky;
     top: 0;
-    height: 96px;
+}
+
+.main-content{
+    padding-top: 100px;
 }
 
 .header-container{
@@ -144,7 +146,6 @@ a:hover{
 }
 
 .logo{
-    font-size: 50px;
     text-decoration: none;
 }
 
@@ -153,10 +154,71 @@ a:hover{
 }
 
 .etiopiamap{
-  background-image: url("media/images/acute_food_insecurity.PNG");
-  width: 800px;
-  height: 400px;
-  object-fit: cover;
-  background-repeat: no-repeat;
+background-image: url("media/images/acute_food_insecurity.PNG");
+width: 800px;
+height: 400px;
+object-fit: cover;
+background-repeat: no-repeat;
 }
+
+
+/*
+*
+* Media query SMALL
+*
+*/
+
+@media only screen and (min-width: 720px) {
+
+.header-container{
+    height: 150px;
+}
+
+.header-container-decreased-size{
+    height: 100px;
+}
+
+.logo{
+    font-size: 80px;
+}
+
+.logo-decreased-size{
+    font-size: 60px;
+}
+
+nav > a{
+    font-size: 35px;
+}
+
+}
+
+/*
+*
+* Media query BIG
+*
+*/
+@media only screen and (min-width: 1200px) {
+
+.header-container{
+    height: 96px;
+}
+
+.header-container-decreased-size{
+    height: 70px;
+}
+
+.logo{
+    font-size: 50px;
+}
+
+.logo-decreased-size{
+    font-size: 40px;
+}
+
+nav > a{
+    font-size: 20px;
+}
+
+}
+
 </style>
