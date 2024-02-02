@@ -93,7 +93,7 @@
             // Navigation scroll effect
             window.addEventListener("scroll", function(e){
                 let scrollDepth = this.scrollY;
-                if(scrollDepth > 50){
+                if(scrollDepth > 10){
                     if(!document.getElementsByClassName("logo")[0].classList.contains("logo-decreased-size")){
                         document.getElementsByClassName("logo")[0].classList.toggle("logo-decreased-size");
                         document.getElementsByClassName("header-container")[0].classList.toggle("header-container-decreased-size");
