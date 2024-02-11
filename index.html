@@ -236,8 +236,8 @@
             window.onbeforeunload = function () {
                 window.scrollTo(0,0);
             };
-            const speed = 0.05;
-            const bspeed = 0.09;
+            const speed = 0.08;
+            const bspeed = 0.12;
             const nspeed = 0.03;
             const content = document.querySelector(".main-container");
             const sectionHero = document.querySelector(".banner");
@@ -824,6 +824,7 @@ footer{
     .donate{
         font-size: 0.8em;
         padding: 8px 14px;
+        top: 30vw;
     }
     .dark-bg-container > article{
         width: 80%;
@@ -855,7 +856,7 @@ footer{
         left: 62%;
     }
     .donate{
-        top: 30vw;
+        top: 36vw;
         font-size: 0.8em;
         padding: 6px 12px;
     }
@@ -879,6 +880,12 @@ footer{
     
 }
 
+/* Responsive adjustments */
+@media (max-width: 345px) {
+.donate{
+    top: 22vw;
+}
+}
 
 /* Responsive adjustments */
 @media (max-width: 340px) {
