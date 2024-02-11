@@ -590,6 +590,7 @@ section{
 
 
 footer{
+    z-index: -99;
     height: 150px;
     background-color: #8a9678;
     width: 100vw;
@@ -659,7 +660,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 45vh;
+    bottom: 45vw;
     justify-content: space-around;
     left: 15vw;
 }
@@ -669,6 +670,20 @@ footer{
     background-color: #868a73;
     margin: 10px;
     width: 70vw;
+}
+
+.flying-cards > article > header{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.flying-cards > article > section{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
 }
 
 .mc-hell{
@@ -720,6 +735,7 @@ footer{
 
     .flying-cards{
         left: 2.5vw;
+        bottom: 30vw;
     }
 
     .flying-cards > article{
@@ -848,7 +864,7 @@ footer{
     }
 
     .flying-cards{
-        bottom: 18vh;
+        bottom: 18vw;
     }
 
     .flying-cards > article{
