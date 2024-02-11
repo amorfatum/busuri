@@ -238,7 +238,7 @@
             };
             $( document ).ready(function() {
             const speed = 0.08;
-            const nspeed = 0.03;
+            const nspeed = 0.0304;
             const content = document.querySelector(".main-container");
             const sectionHero = document.querySelector(".banner");
             const heroTitle = sectionHero.querySelector(".banner-text");
@@ -819,6 +819,19 @@ footer{
         width: 20vw;
         border-radius: 120px;
     }
+}
+
+@media (max-width: 500px) {
+
+    .flying-cards{
+        left: 0;
+    }
+
+    .flying-cards > article{
+        width: 100vw;
+        margin: 0;
+    }
+
 }
 
 /* Responsive adjustments */
