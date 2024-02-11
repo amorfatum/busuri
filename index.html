@@ -189,7 +189,7 @@
                                 <li>Spendenevent Veloausfahrt Langnau i.E.: <strong>Budget Fr. 500</strong></li>
                                 <li>Stiftung Fight4Sight: <strong>Budget Fr. 5'000</strong></li>
                                 <li>Rotary Club Langenthal: <strong>Budget Fr. 4'000</strong></li>
-                                <li><strong class="longStrong">Total Projektbudget: </strong><u>Budget Fr. 31'500</u></li>
+                                <li><strong class="longStrong">Total Projektbudget: </strong><strong><u>Budget Fr. 31'500</u></strong></li>
                             </ul>
                         </section>
                         </div>
@@ -739,6 +739,11 @@ footer{
     .flying-cards > article > section > h2{ 
         font-size: 1em;
     }
+
+    .portrait > img{
+        width: 17vw;
+        border-radius: 120px;
+    }
 }
 /* Responsive adjustments */
 @media (max-width: 780px) {
@@ -779,6 +784,11 @@ footer{
     .flying-cards > article > section > h2{ 
         font-size: 1em;
     }
+
+    .portrait > img{
+        width: 18vw;
+        border-radius: 120px;
+    }
 }
 
 /* Responsive adjustments */
@@ -804,6 +814,11 @@ footer{
     .flying-cards > article > section > h2{ 
         font-size: 1em;
     }
+
+    .portrait > img{
+        width: 20vw;
+        border-radius: 120px;
+    }
 }
 
 /* Responsive adjustments */
@@ -814,9 +829,10 @@ footer{
         left: 62%;
     }
     .donate{
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 8px 14px;
-        top: 30vw;
+        position: absolute;
+        top: 0;
     }
     .dark-bg-container > article{
         width: 80%;
@@ -836,6 +852,11 @@ footer{
     .flying-cards > article > section > h2{ 
         font-size: 1em;
     }
+
+    .portrait > img{
+        width: 25vw;
+        border-radius: 120px;
+    }
 }
 
 /* Responsive adjustments */
@@ -848,8 +869,8 @@ footer{
         left: 62%;
     }
     .donate{
-        top: 36vw;
-        font-size: 0.8em;
+        position: absolute;
+        top: 0;
         padding: 6px 12px;
     }
     .dark-bg-container > article{
@@ -869,20 +890,27 @@ footer{
     .flying-cards > article > section > h2{ 
         font-size: 1.3em;
     }
+
+    .portrait > img{
+        width: 40vw;
+        border-radius: 120px;
+    }
     
 }
 
 /* Responsive adjustments */
 @media (max-width: 345px) {
-.donate{
-    top: 22vw;
-}
+    .donate{
+        top: 0;
+        position: absolute;
+    }
 }
 
 /* Responsive adjustments */
 @media (max-width: 340px) {
 .donate{
-    top: 22vw;
+    top: 0;
+    position: absolute;
 }
 
 .flying-cards{
@@ -903,6 +931,16 @@ footer{
     width: 40vw;
     border-radius: 120px;
 }
+
+
+.budget-section > ul > li > .longStrong{
+    white-space: wrap;
+}
+
+.budget-section > ul > li > strong{
+    white-space: wrap;
+}
+
 
 }
 </style>
