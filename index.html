@@ -236,13 +236,12 @@
             window.onbeforeunload = function () {
                 window.scrollTo(0,0);
             };
+            $( document ).ready(function() {
             const speed = 0.08;
-            const bspeed = 0.12;
             const nspeed = 0.03;
             const content = document.querySelector(".main-container");
             const sectionHero = document.querySelector(".banner");
             const heroTitle = sectionHero.querySelector(".banner-text");
-            const heroButton = sectionHero.querySelector(".donate");
 
             $('.donate').on('click', function(){
                 window.location.replace("https://www.gofundme.com/f/sauberes-trinkwasser-fur-warsayso-dorf?member=28928513&sharetype=teams");
@@ -251,9 +250,6 @@
             window.addEventListener("scroll", function () {
                 const speed = `${getSpeed()}%`;
                 heroTitle.style.top = speed;
-
-                const buttonSpeed = `${getButtonSpeed()}%`;
-                heroButton.style.top = buttonSpeed;
                 
                 const contentspeed = getCspeed();
                 const contentsp = `${contentspeed}vw`;
@@ -271,15 +267,11 @@
                 return 53 - sp;
             }
 
-            function getButtonSpeed() {
-                var sp = window.pageYOffset * bspeed;
-                return 55 - sp;
-            }
-
             function getCspeed() {
                 var spe = window.pageYOffset * nspeed;
                 return 0 - spe;
             }
+        });
 
         </script>
     </body>
